@@ -11,37 +11,23 @@ $(function() {
                 status: $(".user-table-form").find("select[name='status']").val()
             };
         },
-        columns: [{
-                checkbox: true
-            }, {
-                field: 'userId',
-                visible: false
-            }, {
-                field: 'username',
-                title: '用户名'
-            }, {
-                field: 'deptName',
-                title: '部门'
-            }, {
-                field: 'email',
-                title: '邮箱'
-            }, {
-                field: 'mobile',
-                title: '手机'
-            }, {
-                field: 'ssex',
-                title: '性别',
+        columns: [{checkbox: true},
+            {field: 'userId',visible: false},
+            {field: 'username',title: '用户名'},
+            {field: 'deptName',title: '部门'},
+            {field: 'email',title: '邮箱'},
+            {field: 'mobile',title: '手机'},
+            {
+                field: 'ssex',title: '性别',
                 formatter: function(value, row, index) {
                     if (value == '0') return '男';
                     else if (value == '1') return '女';
                     else return '保密';
                 }
-            }, {
-                field: 'crateTime',
-                title: '创建时间'
-            }, {
-                field: 'status',
-                title: '状态',
+            },
+            {field: 'crateTime',title: '创建时间'},
+            {
+                field: 'status',title: '状态',
                 formatter: function(value, row, index) {
                     if (value == '1') return '<span class="badge badge-success">有效</span>';
                     if (value == '0') return '<span class="badge badge-warning">锁定</span>';

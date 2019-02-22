@@ -43,18 +43,10 @@ function login() {
     var password = $(".one input[name='password']").val().trim();
     var code = $(".one input[name='code']").val().trim();
     var rememberMe = $(".one input[name='rememberme']").is(':checked');
-    if (username == "") {
-        $MB.n_warning("请输入用户名！");
-        return;
-    }
-    if (password == "") {
-        $MB.n_warning("请输入密码！");
-        return;
-    }
-    if (code == "") {
-        $MB.n_warning("请输入验证码！");
-        return;
-    }
+    if (username == "")$MB.n_warning("请输入用户名！");return;
+    if (password == "") $MB.n_warning("请输入密码！");return;
+    if (code == "") $MB.n_warning("请输入验证码！");return;
+
     $loginButton.html("").append("<div class='login-loder'><div class='line-scale'><div></div><div></div><div></div><div></div><div></div></div></div>");
     
     $.ajax({

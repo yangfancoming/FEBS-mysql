@@ -1,3 +1,7 @@
+http://localhost:8080/febs 账号 mrbird，密码 123456。
+
+
+
 ## 系统简介
 [FEBS](https://gitee.com/github-16661027/project)是一个简单高效的后台权限管理系统。项目基础框架采用全新的Java Web开发框架 —— Spring Boot，消除了繁杂的XML配置，使得二次开发更为简单；数据访问层采用Mybatis，同时引入了通用Mapper和PageHelper插件，可快速高效的对单表进行增删改查操作，消除了大量传统XML配置SQL的代码；安全框架采用时下流行的Apache Shiro，可实现对按钮级别的权限控制；前端页面使用Bootstrap构建，主题风格为时下Google最新设计语言Material Design，并提供多套配色以供选择。FEBS意指：Fast，Easy use，Beautiful和Safe🙄。
 <!--more-->
@@ -118,7 +122,7 @@ GitHub 地址： https://github.com/wuyouzhuguli/FEBS
 
 下载后以maven项目导入。
 
-开发时直接使用Spring Boot的入口类启动即可，访问地址[localhost](localhost)。部署时建议打包成war包，访问地址[localhost:(端口号)/febs](localhost:(端口号)/febs)。账号mrbird，密码123456。
+开发时直接使用Spring Boot的入口类启动即可，访问地址[localhost](localhost)。部署时建议打包成war包，访问地址[localhost:(端口号)/febs](localhost:(端口号)/febs)。
 
 本软件使用 [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0) 协议，请严格遵照协议内容。
 
